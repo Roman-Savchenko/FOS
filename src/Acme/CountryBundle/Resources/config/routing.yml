@@ -1,0 +1,12 @@
+acme_country_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: AcmeCountryBundle:Default:index }
+
+town:
+
+      resource: "@AcmeCountryBundle/Controller/TownController.php"
+      type:     annotation
+
+town_new:
+        resource: "@AcmeCountryBundle/Controller/TownController.php"
+        type:     annotation

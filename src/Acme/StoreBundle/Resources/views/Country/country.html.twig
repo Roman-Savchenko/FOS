@@ -1,0 +1,13 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Country{% endblock %}
+
+{% block body %}
+    <h1>Это шаблон выводит массив</h1>
+    <ul>
+        {% set coutries = user.countries  %}
+        {% for country in coutries %}
+            <li>{{country.country}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,7 @@
+parameters:
+#    acme_country.example.class: Acme\CountryBundle\Example
+
+services:
+#    acme_country.example:
+#        class: %acme_country.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

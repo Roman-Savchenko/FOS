@@ -1,0 +1,19 @@
+{# src/Acme/TaskBundle/Resources/views/Default/new.html.twig #}
+<table cellspacing="100">
+    <tr>
+        <td><form action="{{ path('task_new') }}" method="post" {{ form_enctype(form) }}>
+                {{ form_errors(form) }}
+
+                {{ form_row(form.country) }}
+
+                {{ form_rest(form) }}
+
+                <input type="submit" />
+            </form>
+        </td>
+
+        <td>
+            The list of country!!!
+        </td>
+    </tr>
+</table>

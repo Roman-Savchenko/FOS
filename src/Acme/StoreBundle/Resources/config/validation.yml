@@ -1,0 +1,8 @@
+# Acme/TaskBundle/Resources/config/validation.yml
+Acme\StoreBundle\Entity\Country:
+    properties:
+        task:
+            - NotBlank: ~
+        dueDate:
+            - NotBlank: ~
+            - Type: \DateTime

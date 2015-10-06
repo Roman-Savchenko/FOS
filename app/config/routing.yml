@@ -1,0 +1,28 @@
+acme_country:
+    resource: "@AcmeCountryBundle/Resources/config/routing.yml"
+    prefix:   /
+
+store:
+    resource: "@AcmeStoreBundle/Resources/config/routing.yml"
+    prefix:   /
+#
+#demo:
+#    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
+#    prefix:   /
+
+country:
+      resource: "@AcmeCountryBundle/Resources/config/routing.yml"
+      prefix:   /
+
+
+acme_calculate:
+            resource: "@AcmeCalculateBundle/Resources/config/routing.yml"
+            prefix:   /
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+    prefix:   /
+
+acme_user:
+            resource: "@AcmeUserBundle/Resources/config/routing.yml"
+            prefix:   /

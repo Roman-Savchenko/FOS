@@ -1,0 +1,28 @@
+{# src/Acme/CountryBundle/Resources/views/Default/new.html.twig #}
+{% extends '::base.html.twig' %}
+{% block body %}
+<table cellspacing="100">
+    <tr>
+        <td>
+            <form action="{{ path('town_new') }}" method="post" {{ form_enctype(form) }}>
+                {{ form_errors(form) }}
+
+                {{ form_row(form.name) }}
+
+                {{ form_rest(form) }}
+
+                <input type="submit" />
+            </form>
+        </td>
+
+        <td>
+            The list of town!!!
+            <ul>
+                {% for town in towns %}
+                    <li> {{ town.name}} </li>
+                {% endfor %}
+            </ul>
+        </td>
+    </tr>
+</table>
+{% endblock %}

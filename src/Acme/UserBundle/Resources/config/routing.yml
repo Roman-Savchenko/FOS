@@ -1,0 +1,7 @@
+user:
+    resource: "@AcmeUserBundle/Controller/RegistrationController.php"
+    type:     annotation
+
+register:
+    resource: "@AcmeUserBundle/Controller/RegistrationController.php"
+    type:     annotation

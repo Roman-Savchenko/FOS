@@ -1,0 +1,8 @@
+product:
+    resource: "@AcmeStoreBundle/Controller/DefaultController.php"
+    type:     annotation
+
+task_new:
+
+        resource: "@AcmeStoreBundle/Controller/DefaultController.php"
+        type:     annotation
