@@ -2,11 +2,12 @@
 namespace Acme\BugBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="project")
- */
+ **/
 class Project
 {
     /**
@@ -19,26 +20,35 @@ class Project
     /**
      * @ORM\Column(type="string", length=100)
      */
-    protected $name;
+    protected $label;
+
+    /**
+     * @ORM\Column(type="string", length=300)
+     */
+    protected $summary;
 
     /**
      * @ORM\Column(type="string", length=100)
      */
-    protected $email;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     */
-    protected $avatar;
+    protected $code;
 
     /**
      * @ORM\Column(type="string", length=30)
      */
-    protected $password;
+    protected $members;
 
     /**
-     * @ORM\Column(type="string", length="30")
+     * @ORM\ManyToMany(targetEntity="User", mappedBy="projects")
      */
 
-    protected $roles;
+    protected $users;
+
+    public function __construct()
+    {
+        $this->users = new ArrayCollection();
+    }
+
+
+
+
 }

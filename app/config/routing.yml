@@ -1,3 +1,7 @@
+acme_bug:
+    resource: "@AcmeBugBundle/Resources/config/routing.yml"
+    prefix:   /
+
 acme_country:
     resource: "@AcmeCountryBundle/Resources/config/routing.yml"
     prefix:   /
